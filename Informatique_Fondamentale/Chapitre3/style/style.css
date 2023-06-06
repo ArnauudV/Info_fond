@@ -1,0 +1,230 @@
+/* Réinitialisation CSS pour éviter les différences de style par défaut des navigateurs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Polices et typographie */
+  body {
+    font-family: Arial, sans-serif; /* Police de caractères Arial, avec une police sans-serif générique comme alternative */
+    line-height: 1.6; /* Espacement entre les lignes pour une meilleure lisibilité */
+    background-color: #f4f4f4; 
+  }
+  
+  /* Style pour les titres h1, h4, h5 */
+  h1, h4, h5 {
+    margin-bottom: 1rem; 
+    color: #333; 
+  }
+  
+  /* Style pour les paragraphes */
+  p {
+    margin-bottom: 1.5rem; 
+  }
+  
+  /* Mise en page */
+  .container {
+    max-width: 1100px; /* Largeur maximale pour le contenu central */
+    margin: 0 auto; 
+    padding: 0 1rem; 
+    overflow: hidden; /* Cache tout contenu débordant de l'élément .container */
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex; /* Utilisation de Flexbox pour aligner les éléments de navigation horizontalement */
+    justify-content: space-between; /* Répartition égale de l'espace entre les éléments de navigation */
+    align-items: center; 
+    padding: 1rem; 
+    border-radius: 5px; 
+    margin-bottom: 1.5rem; /* Espacement en dessous de la barre de navigation */
+  }
+  
+  /* Style pour les liens de navigation */
+  nav a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    padding: 0.5rem 1rem; 
+    border-radius: 5px; 
+  }
+  
+  /* Couleurs d'arrière-plan différentes pour chaque élément de navigation */
+  nav a:nth-child(1) {
+    background-color: #4CAF50; /* Couleur de fond verte */
+    color: #fff; 
+  }
+  nav a:nth-child(2) {
+    background-color: #5abc10; /* Couleur de fond verte */
+    color: #fff; 
+  }
+  
+  nav a:nth-child(3) {
+    background-color:#2196F3 ; /* Couleur de fond bleue */
+    color: #fff; 
+  }
+  
+  nav a:nth-child(4) {
+    background-color: #f44336; /* Couleur de fond rouge */
+    color: #fff; 
+  }
+  
+  /* Effet d'assombrissement au survol des liens de navigation */
+  nav a:hover {
+    opacity: 0.7; /* Réduction de l'opacité pour un effet d'assombrissement */
+  }
+  
+  /* Style pour les images (img, pokeimg, imgmc, imglol, ghost) */
+  .img, .pokeimg, .imgmc, .imglol, .ghost {
+    max-width: 100%; /* Largeur maximale des images pour éviter le débordement */
+    display: block; 
+    margin: 0 auto; 
+  }
+  
+  /* Effet de zoom au survol des images */
+  .img:hover, .pokeimg:hover, .imgmc:hover, .imglol:hover {
+    transform: scale(1.1); /* Agrandit l'image de 10% */
+    transition: all 0.3s ease; /* Animation fluide de l'effet de zoom */
+  }
+  
+  /* Style pour les images Pokémon */
+  .pokeimg {
+    max-height: 250px; 
+    object-fit: cover; /* Redimensionne les images pour remplir l'espace tout en maintenant leur aspect */
+  }
+  
+  /* Autres éléments */
+  img {
+    max-width: 100%; 
+    height: auto; /* Hauteur automatique pour maintenir le bon aspect des images */
+    display: block; /* Affiche les images comme des éléments de bloc */
+  }
+  
+  /* Style pour les tableaux */
+  table {
+    width: 100%; 
+    margin-bottom: 1rem; 
+    border-collapse: collapse; /* Fusionne les bordures des cellules du tableau */
+  }
+  
+  /* Style pour les cellules d'en-tête et de corps de tableau */
+  th, td {
+    padding: 0.5rem; 
+    text-align: left; 
+    border: 1px solid #ccc; /* Bordure grise autour des cellules */
+  }
+  
+  /* Style pour les cellules d'en-tête */
+  th {
+    background-color: #333; 
+    color: #fff; 
+  }
+  
+  /* Couleur d'arrière-plan pour les lignes impaires du corps du tableau */
+  tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; 
+  }
+  
+  /* Style pour le pied de page */
+  footer {
+    background-color: #333; 
+    color: #fff; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; /* Centre les éléments du pied de page horizontalement */
+    padding: 1.5rem; 
+    font-family: Arial, sans-serif; 
+  }
+  
+  /* Styles pour les icônes du pied de page */
+  .footer-icons {
+    display: flex; /* Utilisation de Flexbox pour aligner les icônes horizontalement */
+    flex-direction: column; /* Orientation des éléments en colonne */
+    align-items: center; 
+    margin-bottom: 1rem; 
+  }
+  
+  /* Style pour les titres h5 du pied de page */
+  h5 {
+    margin-bottom: 1rem; 
+  }
+  
+  /* Style pour les lignes d'icônes */
+  .icon-row {
+    display: flex; /* Utilisation de Flexbox pour aligner les icônes horizontalement */
+    align-items: center; 
+    margin-bottom: 0.5rem; 
+  }
+  
+  /* Style pour les paragraphes à côté des icônes */
+  .icon-row p {
+    margin-right: 0.5rem; 
+  }
+  
+  /* Style pour les images du fantôme */
+  .ghost {
+    width: 50px; 
+    height: auto; /* Hauteur automatique pour maintenir le bon aspect des images du fantôme */
+    margin-top: 1rem; 
+  }
+  
+  /* Style pour les icônes FontAwesome */
+  .footer-icons i {
+    font-size: 1.5rem; /* Taille de police pour les icônes FontAwesome */
+    margin: 0 1rem; 
+    color: #fff; 
+  }
+  
+  /* Changement de couleur des icônes au survol */
+  .footer-icons i:hover {
+    color: #555; 
+  }
+  
+  /* Mise en page flexible des images League of Legends et Minecraft */
+  .imgflex {
+    display: flex; 
+    justify-content: space-around; /* Espacement équilibré entre les images */
+    align-items: center; 
+    flex-wrap: wrap; /* Permet aux images de passer à la ligne suivante si nécessaire */
+    margin-bottom: 1.5rem; 
+  }
+  
+  .imgmc, .imglol {
+    width: 45%;
+    max-height: 250px; 
+    object-fit: cover; /* Redimensionne l'image pour couvrir l'espace tout en conservant son aspect */
+  }
+  
+  /* Style du titre principal */
+  h1 {
+    font-size: 2.5rem; 
+    font-weight: 300; 
+    text-transform: uppercase; 
+    letter-spacing: 0.1em; /* Espacement des lettres */
+    color: #333; 
+    text-align: center; /* Centre le titre */
+  }
+  
+  /* Effet d'assombrissement au survol des titres */
+  h1:hover, h4:hover {
+    color: #555; 
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column; /* Modifie la direction de la navigation en colonne pour les écrans plus petits */
+    }
+  
+    nav a {
+      margin-bottom: 0.5rem; /* Espacement en dessous des liens de navigation pour les écrans plus petits */
+    }
+  
+    .imgmc, .imglol {
+      width: 100%; /* Largeur à 100% pour les images Minecraft et League of Legends sur les écrans plus petits */
+      max-height: 400px; /* Hauteur maximale pour les images sur les écrans plus petits */
+    }
+  
+    .pokeimg {
+      max-height: 400px; /* Hauteur maximale pour les images Pokémon sur les écrans plus petits */
+    }
+  }
